@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #494949
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #bcbcbc
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
+
+  .input{
+    display: none;
+  }
+
+  .label:before {
+    background-color: transparent;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top: 50px;
+    left: 80%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 28px;
+    z-index: 10;
+  }
+
+  :checked + .label:before {
+    background-color: white;
+    transform: scale(1);
+  }
+
+  .red-square{
+    width: 10px;
+    height: 10px;
+    background-color: #fe3605;
+    position: absolute;
+    bottom: 20px;
+    right: -12px;
+  }
+  
+
+};
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
